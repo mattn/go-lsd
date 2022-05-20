@@ -18,7 +18,7 @@ func TestDistance(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		got := DistanceString(test.lhs, test.rhs)
+		got := StringDistance(test.lhs, test.rhs)
 		if got != test.want {
 			t.Fatalf("want %v but %v: %v vs %v", test.want, got, test.lhs, test.rhs)
 		}
